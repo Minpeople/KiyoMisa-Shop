@@ -9,4 +9,9 @@ module ApplicationHelper
         end
     end
 
+    def order_presenter
+        @order_presenter ||= OrderPresenter.new(current_order) 
+        
+    end
+    
 end
